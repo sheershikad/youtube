@@ -1,15 +1,3 @@
-
-.home-icon{
-height: 50px;
-background-color: darkgrey;
- }
-
-.material-icons{
-    float: right;
-    padding-right: 50px;
-    padding-top: 10px;
-}
-
 .mat-list-item.video-card{
     height: 275px;
     width: 100%;
@@ -26,8 +14,7 @@ background-color: darkgrey;
     // padding-top: 2%;
     // padding-bottom: 2%;
 }
-
-.myvideo-container {
+.uservideo-container {
     display: flex;
     position: relative;
     margin-top: 20px;
@@ -39,13 +26,13 @@ background-color: darkgrey;
     // padding-right: 10%;
   }
   
-  .myvideo-source-container{
+  .uservideo-source-container{
   flex: 0 0 5%;
   float: left;
   width: 40%;
   }
   
-  .myvideo-details-container{
+  .uservideo-details-container{
     
   flex: 0 0  0%;
   float: left;
@@ -54,7 +41,7 @@ background-color: darkgrey;
   }
   
   
-  .myvideo-title{
+  .uservideo-title{
   font-family: "Roboto","Arial",sans-serif;
     font-size: 1.6rem;
     line-height: 2rem;
@@ -65,7 +52,7 @@ background-color: darkgrey;
   .vd{
     margin:0;
   }
-  .myvideo-views,.myvideo-date{
+  .uservideo-views,.uservideo-date{
   font-family: "Roboto","Arial",sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -73,9 +60,33 @@ background-color: darkgrey;
     color: #4f4d4d;
   }
   
+    
+  .account{
+    font-family: "Roboto","Arial",sans-serif;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    display: flex;
+    position: relative;
+    // display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #4f4d4d;
+    
+  }
+  .account-icon{
+   
+    float: left;
+    margin: 0px;
+    padding: 0px;
+  }
+  .creator{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+  }
   
-  
-  .myvideo-description{
+  .uservideo-description{
     font-family: "Roboto","Arial",sans-serif;
     margin: 0px;
     padding: 0px;
@@ -83,6 +94,10 @@ background-color: darkgrey;
     color: #4f4d4d;
   }
   
+  
+  // mat-card{
+  //   width: 70%;
+  // }
   
   
   

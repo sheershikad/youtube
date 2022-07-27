@@ -1,0 +1,45 @@
+
+<div class="uservideo-container">
+    <div class="uservideo-source-container">
+   <iframe *ngIf="uservideo" width="660" height="371" [src] = "transform(uservideo.videoSource)"></iframe>
+    </div>
+    <div class="uservideo-details-container">
+      <h4 class="uservideo-title">{{uservideo?.title}}</h4>
+      <div class="vd"><span class="uservideo-views">{{uservideo?.views}} views</span><span class="uservideo-date"> Premiered     {{uservideo?.date}} </span><span class="uservideo-description">{{uservideo?.description}}</span>
+      </div>
+      <div class="all-icons"><pre><mat-icon title="I like this">thumb_up_alt</mat-icon> Like   <mat-icon title="I dislike this">thumb_down_alt</mat-icon> Dislike   <mat-icon title="share"> share</mat-icon> Share   <mat-icon title="clip">content_cut</mat-icon> Clip   <mat-icon title="save"> playlist_add</mat-icon> Save   <mat-icon title="report">flag</mat-icon> Report</pre></div>
+    <div class="account-box">
+        <pre><mat-icon class="account-icon">account_circle</mat-icon>          {{uservideo?.creator}}                    <button mat-raised-button color="warn">SUBSCRIBE</button></pre>
+    </div>
+    <b>Comments</b>
+    <br>
+    <br>
+    <input type="text" placeholder="write a comment">
+    <div>
+      <div class="comments">
+        <div class="icon">
+          <mat-icon>account_circle</mat-icon>
+        </div>
+        <div class="viewer">
+          <p class="v-name">{{uservideo?.commenter1}}</p>
+          <p class="v-comment">{{uservideo?.comment1}}</p>
+          <pre><mat-icon title="Like">thumb_up_alt</mat-icon>  <mat-icon title="Dislike">thumb_down_alt</mat-icon>  <a href="#">REPLY</a></pre>
+        </div>
+    </div>
+    </div>
+    <div>
+      <div class="comments">
+        <div class="icon">
+          <mat-icon>account_circle</mat-icon>
+        </div>
+        <div class="viewer">
+          <p class="v-name">{{uservideo?.commenter2}}</p>
+          <p class="v-comment">{{uservideo?.comment2}}</p>
+          <pre><mat-icon title="Like">thumb_up_alt</mat-icon>  <mat-icon title="Dislike">thumb_down_alt</mat-icon>  <a href="#">REPLY</a></pre>
+        </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  
+  

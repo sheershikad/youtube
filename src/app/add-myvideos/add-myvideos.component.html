@@ -1,1 +1,76 @@
-<p>add-myvideos works!</p>
+<div class="home-icon">
+    <mat-icon title="go to home" [routerLink]= "'/home'">home</mat-icon>
+    <mat-icon class="myvideos-icon" title="My videos" [routerLink]= "'/myvideos'">ondemand_video</mat-icon>
+</div>
+<div>
+    <mat-card class="form">
+      <button mat-raised-button (click)= "addMyVideo()" color ="primary">Add video</button>
+      <form [formGroup]= "addMyVideoFormGroup">
+        <div formArrayName="myvideos">
+          <div *ngFor= "let myvideo of myvideos.controls; let i = index">
+            <div [formGroupName] ="i">
+              <div>
+                <mat-form-field appearance="fill">
+                  <mat-label>Email</mat-label>
+                  <input matInput type="text" formControlName="email"/>
+                </mat-form-field>
+              </div>
+              <div>
+                <mat-form-field appearance="fill">
+                  <mat-label>Id</mat-label>
+                  <input matInput type="number" formControlName="id"/>
+                </mat-form-field>
+              </div>
+               <div>
+                <mat-form-field appearance="fill">
+                  <mat-label>Video Source</mat-label>
+                  <input type="text" matInput formControlName="videoSource"/>
+                </mat-form-field>
+               </div>
+                
+                <div>
+                  <mat-form-field appearance="fill">
+                    <mat-label>Title</mat-label>
+                    <input matInput formControlName="title"/>
+                  </mat-form-field>
+                </div>
+                  
+                  <div>
+                    <mat-form-field appearance="fill">
+                      <mat-label>Views</mat-label>
+                      <input matInput type="number" formControlName="views"/>
+                    </mat-form-field>
+                  </div>
+                  <div>
+                    <mat-form-field appearance="fill">
+                      <mat-label>Date</mat-label>
+                      <input matInput formControlName="date"/>
+                    </mat-form-field>
+                  </div>
+                <div>
+                  <mat-form-field appearance="fill">
+                    <mat-label>Description</mat-label>
+                    <input matInput formControlName= "description"/>
+                  </mat-form-field>
+                </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <br>
+      <button
+        mat-raised-button
+        color="accent" [disabled]= "addMyVideoFormGroup.invalid" (click)="saveMyVideo()"
+        >
+        Save
+      </button>
+    </mat-card>
+  </div>
+  
+  
+  
+  
+  
+  
+
+

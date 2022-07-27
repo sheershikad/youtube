@@ -1,0 +1,47 @@
+.container{
+    height: 56px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(44, 39, 39);
+}
+.start{
+    width:20%;
+}
+.center{
+    width: 60%;
+}
+.end{
+    width:20%
+}
+.add-myvideos-icon.material-icons{
+    padding-right: 20px;
+    color: #fbf6f6;
+   
+}
+
+.myvideos-icon.material-icons{
+    padding-right: 80px;
+    color: #fbf6f6;
+   
+    
+}
+.account-icon{
+    color: #fbf6f6;
+}
+.search.material-icons{
+    color: #fbf6f6;
+    padding-left: 10px;
+    padding-top: 5px;
+   
+}
+.search{
+    height: 20px;
+    width: 300px;
+    padding-top: 10px;
+}
+img{
+    padding-top: 7px;
+}

@@ -1,0 +1,91 @@
+.uservideo-container {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.uservideo-source-container{
+    width: 640px;
+}
+
+.uservideo-title{
+font-family: "Roboto","Arial",sans-serif;
+  padding-top:10px;
+  padding-bottom:15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  margin:0;
+
+}
+
+.uservideo-views,.uservideo-date{
+
+font-family: "Roboto","Arial",sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin:0;
+  }
+  .vd{
+  margin:0;
+  }
+  .uservideo-description{
+  font-family: "Roboto","Arial",sans-serif;
+  margin:0;
+  
+  }
+  
+
+  .account-box{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding:5px;
+  }
+
+  .all-icons{
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 25px;
+  }
+
+  pre{
+    margin: 0%;
+  }
+
+
+  .comments{
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    // display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .icon{
+  flex: 0 0 5%;
+  float: left;
+  width: 30px;
+}
+
+ .viewer{
+  flex: 0 0  0%;
+  float: left;
+ }
+
+.v-name{
+  margin: 0px;
+}
+.v-comment{
+  margin: 0px;
+}
+
+
+.account-icon.mat-icon {
+  font-size: 50px;
+  height: 50px ;
+  width: 50px;
+}

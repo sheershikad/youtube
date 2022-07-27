@@ -1,1 +1,14 @@
-<p>youtubenav works!</p>
+<div class="container">
+    <div class="start">
+        <img src="assets/youtubelogo.jpg" width="90" height="35">
+    </div>
+    <div class="center">
+        <input class="search" title="search for a video"type="text" placeholder="Search..">
+        <mat-icon class="search">search</mat-icon>
+    </div>
+    <div class="end">
+        <mat-icon class="add-myvideos-icon" title="Upload video" [routerLink]= "'/add-myvideos'">upload_file</mat-icon>
+        <mat-icon class="myvideos-icon" title="My videos" [routerLink]= "'/myvideos'">ondemand_video</mat-icon>
+        <mat-icon class="account-icon" >account_circle</mat-icon>
+    </div>
+</div>

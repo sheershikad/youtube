@@ -1,1 +1,25 @@
-<p>myvideos works!</p>
+<div>
+    <div class="home-icon">
+        <mat-icon title="go to home" [routerLink]= "'/home'">home</mat-icon>
+    </div>
+    <div class="videos">
+        <mat-card>
+            <mat-list>
+                <mat-list-item class="video-card" *ngFor= "let myvideo of myvideos">
+                    <div class="myvideo-container">
+                        <div class="myvideo-source-container">  
+                              <iframe width="360" height="210" [src] = "transform(myvideo!.videoSource)" ></iframe>
+                          </div>
+                          <div class="myvideo-details-container">
+                            <h4 class="myvideo-title">{{myvideo?.title}}</h4>
+                            <p class="vd"><span class="myvideo-views">{{myvideo?.views}}</span> views <b> • </b><span class="myvideo-date">{{myvideo?.date}}</span></p>
+                            <div class="myvideo-description">
+                              <p>{{myvideo?.description}}</p>
+                            </div>
+                        </div>
+                      </div>
+                </mat-list-item>
+            </mat-list>
+        </mat-card>
+    </div>
+</div>

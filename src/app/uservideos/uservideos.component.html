@@ -1,0 +1,29 @@
+
+<div class="videos">
+    <mat-card>
+        <mat-list>
+            <mat-list-item class="video-card" (click)= "showVideoDetails(uservideo)" *ngFor= "let uservideo of alluservideos">
+                <div class="uservideo-container">
+                    <div class="uservideo-source-container">
+                        <iframe width="360" height="210" [src] = "transform(uservideo!.videoSource)"></iframe>
+                      </div>
+                      <div class="uservideo-details-container">
+                        <h4 class="uservideo-title">{{uservideo?.title}}</h4>
+                        <p class="vd"><span class="uservideo-views">{{uservideo?.views}} views </span><b> • </b><span class="uservideo-date">{{uservideo?.date}}</span></p>
+                        <div class="account">
+                          <div class="account-icon"> 
+                              <mat-icon>account_circle</mat-icon>
+                          </div>
+                          <div class="creator">
+                              <p>{{uservideo?.creator}}</p>
+                          </div>
+                        </div>
+                        <div class="uservideo-description">
+                          <p>{{uservideo?.description}}</p>
+                        </div>
+                    </div>
+                  </div>
+            </mat-list-item>
+        </mat-list>
+    </mat-card>
+</div>
